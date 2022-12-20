@@ -1,4 +1,4 @@
-# Transportation Application
+# Mobile Application For Transportation
 
 A prototype transportation application integrated with Google APIs (Maps, Places), Firebase, Mapbox Navigation API.
 
