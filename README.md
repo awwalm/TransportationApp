@@ -2,6 +2,10 @@
 
 A prototype transportation application integrated with Google APIs (Maps, Places), Firebase, Mapbox Navigation API.
 
+### In a Glance
+<img src="https://user-images.githubusercontent.com/67423428/208718255-ce714fba-20b0-4b83-b581-4c447fa8d748.png" width="65%"/>
+
+
 ### Prerequisites
 
 - **Java 8**: At the moment of writing, the source code was written with Java 8. Should you wish to use a higher/up-to-date version, be sure to account for compatibility makeshifts.
