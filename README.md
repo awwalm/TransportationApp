@@ -1,6 +1,8 @@
 # Mobile Application For Transportation
 
-A prototype transportation application integrated with Google APIs (Maps, Places), Firebase, Mapbox Navigation API.
+A prototype transportation application[^1] integrated with Google APIs (Maps, Places), Firebase, Mapbox Navigation API.
+
+[^1]: Specific modules have been localized to Malaysia alone.
 
 ### In a Glance
 <img src="https://user-images.githubusercontent.com/67423428/208718255-ce714fba-20b0-4b83-b581-4c447fa8d748.png" width="65%"/>
