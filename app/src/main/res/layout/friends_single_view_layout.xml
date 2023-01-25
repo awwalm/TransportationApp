@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/friendsRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/nameLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens">
+
+        <TextView
+            android:id="@+id/textViewForFriendsName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:height="18dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:hint="@string/name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/genderLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/nameLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForFriendsGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/gender" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/genderLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForFriendsEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/email" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/groupCodeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/emailLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForFriendsGroupCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/group_code"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favoriteCityLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/groupCodeLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForFriendsFavoriteCity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/favorite_city"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/friendsRVDivider"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.55dp"
+        android:layout_below="@id/favoriteCityLinearLayout"
+        android:background="@color/colorAccentLight"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/tripScheduleLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".schedule.TripScheduleActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/spacing"
+        android:orientation="horizontal"
+        android:id="@+id/rowOneSch">
+
+        <Button
+            android:id="@+id/trainScheduleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/spacing"
+            android:gravity="center"
+            android:lines="2"
+            android:layout_weight="1"
+            android:text="@string/trains">
+        </Button>
+
+        <Button
+            android:id="@+id/busScheduleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/spacing"
+            android:gravity="center"
+            android:lines="2"
+            android:layout_weight="1"
+            android:text="@string/buses">
+        </Button>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/rowTwoSch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/spacing"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rowOneSch"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/trainArt"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/train_art">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowThreeSch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/spacing"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rowTwoSch"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/carArt"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bus_art">
+        </ImageView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

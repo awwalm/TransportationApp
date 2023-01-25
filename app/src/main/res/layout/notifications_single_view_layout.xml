@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/dateTimeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens">
+
+        <TextView
+            android:id="@+id/textViewForDateTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:height="18dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:hint="@string/date"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fromLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/dateTimeLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/from" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sharedTicketIDLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/fromLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForSharedTicketID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/shared_ticket_id" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sharedDestinationLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/sharedTicketIDLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForSharedDestination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/destination"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sharedOriginLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/sharedDestinationLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForSharedOrigin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/origin"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/notificationsRVDivider"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.55dp"
+        android:layout_below="@id/sharedOriginLinearLayout"
+        android:background="@color/colorAccentLight"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

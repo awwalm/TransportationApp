@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/bookedOnLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens">
+
+        <TextView
+            android:id="@+id/textViewForBookedOn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:height="18dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:hint="@string/date_booked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tripDateLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/bookedOnLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForTripDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/trip_date" />
+        <TextView
+            android:id="@+id/textViewForTripTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/trip_time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/placeOfDestinationLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/tripDateLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForPlaceOfDestination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/destination"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/placeOfOriginLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/placeOfDestinationLinearLayout">
+        <TextView
+            android:id="@+id/textViewForPlaceOfOrigin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/origin"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ticketIDLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimens"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_below="@+id/placeOfOriginLinearLayout">
+
+        <TextView
+            android:id="@+id/textViewForTicketID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/ticket_id"/>
+        <TextView
+            android:id="@+id/textViewForTicketType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:height="15dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:hint="@string/ticket_type"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tripRecordsRVDivider"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.55dp"
+        android:layout_below="@id/ticketIDLinearLayout"
+        android:background="@color/colorAccentLight"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- @TODO turn the stylized EditText into a TextInputLayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".profile.UserProfileActivity">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/userProfilePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedNameTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_name_new"
+                    app:endIconDrawable="@drawable/ic_dont_edit"
+                    app:endIconMode="custom"
+                    app:helperText="@string/not_editable"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="@color/colorAccentLight">
+
+                    <EditText
+                        android:id="@+id/editNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="50dp"
+                        android:enabled="false"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint="@string/your_name_new"
+                        android:lines="2"
+                        android:textSize="14sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedEmailTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_email"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:endIconMode="custom"
+                    app:endIconDrawable="@drawable/ic_dont_edit"
+                    app:helperTextEnabled="true"
+                    app:helperText="@string/not_editable"
+                    app:helperTextTextColor="@color/colorAccentLight">
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/editEmailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="50dp"
+                        android:textSize="14sp"
+                        android:inputType="textEmailAddress"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:lines="2"
+                        android:hint="@string/your_email" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedGroupCodeTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/update_friends_group_code"
+                    app:hintTextColor="@color/colorAccentLight"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="100">
+
+                    <EditText
+                        android:id="@+id/editGroupCodeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="50dp"
+                        android:textSize="14sp"
+                        android:inputType="textShortMessage"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:lines="2">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedGenderTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/update_gender"
+                    app:hintTextColor="@color/colorAccentLight"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="100">
+
+                    <EditText
+                        android:id="@+id/editGenderEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="50dp"
+                        android:textSize="14sp"
+                        android:inputType="textShortMessage"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:lines="2" >
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedFavoriteCityTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/update_favorite_city"
+                    app:hintTextColor="@color/colorAccentLight"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50">
+
+                    <EditText
+                        android:id="@+id/editFavoriteCityEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:height="50dp"
+                        android:textSize="14sp"
+                        android:inputType="textShortMessage"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:lines="2" >
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="@dimen/spacing"
+        android:layout_marginRight="@dimen/dimens"
+        android:layout_marginLeft="@dimen/dimens"
+        android:background="@color/colorAccentLight"
+        app:layout_dodgeInsetEdges="bottom">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fromProfileHomeFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginEnd="@dimen/dimens"
+                android:layout_marginStart="@dimen/dimens"
+                android:src="@drawable/ic_home"
+                android:tint="@color/quantum_white_100"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/submitNewFeedbackFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginEnd="@dimen/dimens"
+                android:layout_marginStart="@dimen/dimens"
+                android:src="@drawable/ic_feedback"
+                android:tint="@color/quantum_white_100" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fromProfileNavigateFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginEnd="@dimen/dimens"
+                android:layout_marginStart="@dimen/dimens"
+                android:src="@drawable/ic_navigation"
+                android:tint="@color/quantum_white_100"
+                android:visibility="gone"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fromProfileSaveFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginEnd="@dimen/dimens"
+                android:layout_marginStart="@dimen/dimens"
+                android:src="@drawable/ic_save"
+                android:tint="@color/quantum_white_100"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
